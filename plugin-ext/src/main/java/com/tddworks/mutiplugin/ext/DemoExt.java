@@ -1,6 +1,6 @@
-package vanstudio.mutiplugin.ext;
+package com.tddworks.mutiplugin.ext;
 
-import vanstudio.mutiplugin.base.DemoInterface;
+import com.tddworks.mutiplugin.base.DemoInterface;
 
 public class DemoExt implements DemoInterface {
     @Override

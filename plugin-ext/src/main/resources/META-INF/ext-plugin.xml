@@ -4,11 +4,11 @@
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
     <depends>com.intellij.java</depends>
-    <depends>vanstudio.plugin-base</depends>
+    <depends>tddworks.plugin-base</depends>
 
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
-    <extensions defaultExtensionNs="vanstudio.plugin-base">
-        <demoExt language="JAVA" implementationClass="vanstudio.mutiplugin.ext.DemoExt"/>
+    <extensions defaultExtensionNs="tddworks.plugin-base">
+        <demoExt language="JAVA" implementationClass="com.tddworks.mutiplugin.ext.DemoExt"/>
     </extensions>
 </idea-plugin>

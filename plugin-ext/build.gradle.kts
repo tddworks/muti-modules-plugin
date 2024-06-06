@@ -1,7 +1,7 @@
 plugins {
-    id("org.jetbrains.intellij.platform.module") version "2.0.0-beta4"
+    id("org.jetbrains.intellij.platform.module")
     id("java")
-    id("org.jetbrains.kotlin.jvm") version "2.0.0"
+    id("org.jetbrains.kotlin.jvm")
 }
 
 repositories {
@@ -12,10 +12,13 @@ repositories {
 }
 
 dependencies {
+    implementation(project(":plugin-base"))
     intellijPlatform {
-        create(providers.gradleProperty("platformType"), providers.gradleProperty("platformVersion"))
+        create(
+            providers.gradleProperty("platformType"),
+            providers.gradleProperty("platformVersion")
+        )
         bundledPlugins("com.intellij.java")
-        localPlugin(project(":plugin-base"))
         instrumentationTools()
     }
 }

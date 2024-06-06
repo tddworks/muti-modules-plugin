@@ -1,0 +1,32 @@
+<idea-plugin package="com.tddworks.intellij" xmlns:xi="http://www.w3.org/2001/XInclude" allow-bundled-update="true">
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>com.tddworks.multi.modules.plugin</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>Multi modules</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor email="support@tddworks.com" url="https://www.tddworks.com">tddworks</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description><![CDATA[
+      This is a multi module plugin which contains multiple modules and examples.
+  ]]></description>
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+
+    <xi:include href="/META-INF/plugin-base.xml" xpointer="xpointer(/idea-plugin/*)"/>
+
+    <!-- https://github.com/JetBrains/educational-plugin/blob/master/intellij-plugin/resources/META-INF/plugin.xml -->
+    <!--suppress PluginXmlValidity -->
+    <content>
+        <!-- language modules -->
+        <module name="com.tddworks.intellij.copilot.extensions.kotlin"/>
+
+        <!-- extension modules -->
+        <module name="com.tddworks.intellij.copilot.extensions.git"/>
+    </content>
+</idea-plugin>
