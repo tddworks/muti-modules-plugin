@@ -21,12 +21,10 @@
     <xi:include href="/META-INF/plugin-base.xml" xpointer="xpointer(/idea-plugin/*)"/>
 
     <!-- https://github.com/JetBrains/educational-plugin/blob/master/intellij-plugin/resources/META-INF/plugin.xml -->
+
     <!--suppress PluginXmlValidity -->
     <content>
-        <!-- language modules -->
-        <module name="com.tddworks.intellij.copilot.extensions.kotlin"/>
-
         <!-- extension modules -->
-        <module name="com.tddworks.intellij.copilot.extensions.git"/>
+        <module name="com.tddworks.intellij.ext"/>
     </content>
 </idea-plugin>
