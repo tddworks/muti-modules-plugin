@@ -3,9 +3,9 @@
     <!-- Product and plugin compatibility requirements.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <!--suppress PluginXmlValidity -->
-<!--    <dependencies>-->
-<!--        <plugin id="Git4Idea"/>-->
-<!--    </dependencies>-->
+    <dependencies>
+        <plugin id="Git4Idea"/>
+    </dependencies>
 
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->

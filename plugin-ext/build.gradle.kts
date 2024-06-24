@@ -20,7 +20,7 @@ dependencies {
             providers.gradleProperty("platformType"),
             providers.gradleProperty("platformVersion")
         )
-        bundledPlugins("org.jetbrains.kotlin")
+        bundledPlugins("Git4Idea")
         instrumentationTools()
         testFramework(TestFrameworkType.Bundled)
     }
