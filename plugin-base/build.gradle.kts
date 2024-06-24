@@ -1,14 +1,11 @@
 import org.jetbrains.intellij.platform.gradle.TestFrameworkType
 
 plugins {
-    id("java")
-    id("org.jetbrains.kotlin.jvm")
     id("org.jetbrains.intellij.platform.module")
     id("org.jetbrains.kotlin.plugin.serialization")
+    id("java")
+    id("org.jetbrains.kotlin.jvm")
 }
-
-group = "sample"
-version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
