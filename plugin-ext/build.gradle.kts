@@ -22,7 +22,7 @@ dependencies {
         )
         bundledPlugins("org.jetbrains.kotlin", "Git4Idea")
         instrumentationTools()
-        testFramework(TestFrameworkType.Platform.Bundled)
+        testFramework(TestFrameworkType.Bundled)
     }
 }
 

@@ -31,7 +31,7 @@ dependencies {
         pluginVerifier()
         zipSigner()
         instrumentationTools()
-        testFramework(TestFrameworkType.Platform.Bundled)
+        testFramework(TestFrameworkType.Bundled)
     }
 
     implementation("org.apache.commons:commons-text:1.11.0")
