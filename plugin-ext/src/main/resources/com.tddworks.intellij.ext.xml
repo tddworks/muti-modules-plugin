@@ -1,12 +1,11 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
-<idea-plugin package="com.tddworks.mutiplugin.ext">
+<idea-plugin package="com.tddworks.mutiplugin.ext.git">
     <!-- Product and plugin compatibility requirements.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <!--suppress PluginXmlValidity -->
-    <dependencies>
-        <plugin id="org.jetbrains.kotlin"/>
-        <plugin id="Git4Idea"/>
-    </dependencies>
+<!--    <dependencies>-->
+<!--        <plugin id="Git4Idea"/>-->
+<!--    </dependencies>-->
 
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
@@ -14,4 +13,15 @@
         <demoExt language="JAVA"
                  implementationClass="com.tddworks.mutiplugin.ext.DemoExt"/>
     </extensions>
+
+
+    <actions>
+        <action id="tddworks.copilot.Vcs.CommitMessage"
+                class="com.tddworks.mutiplugin.ext.git.GitAction"
+                icon="/icons/pluginIcon.svg"
+                description="This is a sample action">
+
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+        </action>
+    </actions>
 </idea-plugin>

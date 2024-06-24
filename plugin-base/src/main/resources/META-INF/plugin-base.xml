@@ -3,11 +3,13 @@
     <!-- Product and plugin compatibility requirements.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
-    <depends>com.intellij.java</depends>
 
     <extensionPoints>
-        <extensionPoint name="demoExt" beanClass="com.intellij.lang.LanguageExtensionPoint" dynamic="true">
-            <with attribute="implementationClass" implements="com.tddworks.mutiplugin.base.DemoInterface"/>
+        <extensionPoint name="demoExt"
+                        beanClass="com.intellij.lang.LanguageExtensionPoint"
+                        dynamic="true">
+            <with attribute="implementationClass"
+                  implements="com.tddworks.mutiplugin.base.DemoInterface"/>
         </extensionPoint>
     </extensionPoints>
 
